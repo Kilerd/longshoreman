@@ -1,0 +1,18 @@
+[package]
+name = "longshoreman"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gotcha = { git = "https://github.com/kilerd/gotcha.git", branch = "main" }
+bollard = "0.15"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+bcrypt = "0.15"
+thiserror = "1.0"
+anyhow = "1.0"
+jsonwebtoken = "9.2"
+uuid = { version = "1.7", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+axum = { version = "0.7", features = ["json"] }
